@@ -1,0 +1,9 @@
+package exceptiondemo;
+
+public class Zeroexception extends Exception {
+	
+	public Zeroexception() {
+	super("zero nhi re  baba allowed !");
+	}
+
+}

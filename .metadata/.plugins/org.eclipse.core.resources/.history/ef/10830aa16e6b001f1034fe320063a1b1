@@ -1,0 +1,26 @@
+package exceptiondemo2;
+
+public class Exceptiondemo {
+	
+	public static void main(String args[])
+	{
+		
+		
+		
+		int i=5;
+		int j=0;
+		
+		try {
+		System.out.println(i/j); 
+		}
+		catch(Exception E)
+		{
+			System.out.println(E.getMessage());
+			
+		}
+		finally {
+			System.out.println("The Code executed !");
+		}
+		
+	}
+}

@@ -1,0 +1,36 @@
+package exceptiondemo2;
+
+public class ExceptionDemo4 {
+
+	public static void main(String[] args) {
+
+	}
+}
+
+class Abc
+{
+	
+	public void checkentry(int i)
+	{
+      try
+      {
+    	  if(i>5)
+    	  {
+    		  throw new Exception("Invalid Entry !");
+    	  }
+      }
+      catch(Exception e)
+      {
+    	  System.out.println(e.getMessage());
+      }
+	}
+	
+	
+}
+
+
+
+
+
+
+//5>i , "Invalid Entry "

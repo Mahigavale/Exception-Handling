@@ -1,0 +1,29 @@
+package exceptiondemo;
+
+public class ExceptionOne {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+class Demo{
+	
+	
+	public void demo()
+	{
+		int num=5;
+		int  num2=6;
+		
+		try {
+				
+		}
+		catch
+		{
+			
+		}
+		finally
+	}

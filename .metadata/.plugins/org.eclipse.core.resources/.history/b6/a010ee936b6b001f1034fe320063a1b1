@@ -1,0 +1,17 @@
+package exceptiondemo;
+
+public class Animal {
+
+	
+	
+	public Animal()
+	{
+		System.out.println("Animal Constructor !");
+	}
+	
+	
+	public void Show()
+	{
+		System.out.println("show from animal !");
+	}
+}

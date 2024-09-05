@@ -1,0 +1,14 @@
+package customDemo;
+
+public class ShubhamExceptionConsumer {
+
+	public static void main(String[] args) {
+
+		
+		
+		int i=6;
+		int j=5;
+		
+	}
+
+}

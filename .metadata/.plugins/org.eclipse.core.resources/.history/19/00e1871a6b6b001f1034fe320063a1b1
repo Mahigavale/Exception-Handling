@@ -1,0 +1,15 @@
+package exceptiondemo;
+
+public class AnimalConsumer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+class Tiger extends Animal{
+	
+	super.show();
+	
+}

@@ -1,0 +1,11 @@
+package exceptiondemo2;
+
+public class Exceptiondemo {
+	
+	public static void main(String args[])
+	{
+		
+		
+		
+	}
+}
