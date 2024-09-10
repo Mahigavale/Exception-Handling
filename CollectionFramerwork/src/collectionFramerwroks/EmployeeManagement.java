@@ -28,6 +28,19 @@ public class EmployeeManagement {
 		  System.out.println("*************************************");
 	  }
 	  
+	  
+	  System.out.println("USING PLAIN FOR LOOP :");
+	  
+	  for(int i=0;i<Hcl.size();i++)
+	  {
+		  Employee emp=Hcl.get(i);
+		  
+		  System.out.println(emp.id);
+		  System.out.println(emp.name);
+		  System.out.println(emp.mobile);
+		  System.out.println("***********************");
+	  }
+	  
 	}
 
 }
