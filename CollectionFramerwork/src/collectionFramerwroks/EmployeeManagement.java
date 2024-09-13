@@ -1,6 +1,7 @@
 package collectionFramerwroks;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class EmployeeManagement {
 
@@ -18,29 +19,28 @@ public class EmployeeManagement {
 	  Hcl.add(new Employee(25,"kartik","90909090"));
 	  
 	  
+	  Iterator<Employee> itr=Hcl.iterator();
+	  //hasnext, next, remove ,set
 	  
-	  for(Employee Emp:Hcl) //Object mapping 
+	  while(itr.hasNext())
 	  {
+		  Employee emp2=itr.next();
+		  //object mapping
+		 // System.out.println(emp2.name);
+		 // System.out.println("**************************");
 		  
-		  System.out.println(Emp.id);
-		  System.out.println(Emp.name);
-		  System.out.println(Emp.mobile);
-		  System.out.println("*************************************");
+		  if(emp2.name=="matthew")
+		  {
+			  itr.remove();
+		  }
+		  else
+		  {
+			  System.out.println(emp2.name);
+		  }
 	  }
 	  
 	  
-	  System.out.println("USING PLAIN FOR LOOP :");
-	  
-	  for(int i=0;i<Hcl.size();i++)
-	  {
-		  Employee emp=Hcl.get(i);
-		  
-		  System.out.println(emp.id);
-		  System.out.println(emp.name);
-		  System.out.println(emp.mobile);
-		  System.out.println("***********************");
-	  }
-	  
+
 	}
 
 }

@@ -30,49 +30,25 @@ public class EmployeeStorage {
 
 		System.out.println(Intutech);
 		
+		//name=>"Ishwari";
 		
-		Iterator<Employee> itr=Intutech.iterator();
-		
-		
-		while(itr.hasNext())
+		for(Employee emp:Intutech)
 		{
-			Employee emp2=itr.next();
-			if(emp2.name=="Dupari")
+			if(emp.name=="Ishwari")
 			{
-				System.out.println(emp2.mobile);
+				System.out.println(emp.mobile);
+				
 			}
 			else
 			{
 				continue;
 			}
-		}
+	}
 		
-		//boolean flag=true;
-//		for(Employee emp:Intutech)
-//		{
-//			if(emp.mobile=="777483434412")
-//			{
-//				System.out.println(emp.name);
-//				flag=false;
-//			}
-//			
-//			else
-//			{
-//				continue;
-//			}
-//			
-//		}
-//		
-//		if(flag==true)
-//		{
-//			System.out.println("no such number");
-//		}
-//		else
-//		{
-//			System.out.println("number printed above.");
-//		}
-//		
-//		
+	
+		
+		
+
 	}
 
 }
