@@ -1,7 +1,0 @@
-package customDemo;
-
-public class ShubhamException  extends Exception{
-	
-	
-
-}

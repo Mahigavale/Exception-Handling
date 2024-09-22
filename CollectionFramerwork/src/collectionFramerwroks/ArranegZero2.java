@@ -32,7 +32,7 @@ interface Demo{
 	//numbers.forEach((n)->{System.out.println(n);});
 		 numbers.forEach( (n) -> { System.out.println(n); } );
 		 
-		 Consumer<Integer> method=(n)->{System.out.println(n);}
+		 Consumer<Integer> method=(n)->{System.out.println(n);};
 	
 }
 }
