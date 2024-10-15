@@ -1,11 +1,15 @@
 package com.example.demo.Entity;
 
-import org.springframework.stereotype.Component;
 
-@Component
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Address {
 
-	
+	@Id
+	private int addid;
+	//primary key
 	private String city;
 	private String pincode;
 	private String landmark;
@@ -27,4 +31,11 @@ public class Address {
 	public void setLandmark(String landmark) {
 		this.landmark = landmark;
 	}
+	public int getAddid() {
+		return addid;
+	}
+	public void setAddid(int addid) {
+		this.addid = addid;
+	}
+	
 }
