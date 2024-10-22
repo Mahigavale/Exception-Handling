@@ -2,7 +2,12 @@ package com.starpublication.Entity;
 
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
@@ -12,13 +17,17 @@ import jakarta.persistence.OneToOne;
 public class Book {
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int bookid;
 	private String bookname;
 	private double bookprice;
 	private LocalDate publishedon; //yyyy-mm-dd :=> 
 	
+	//Jsonbackreference=:> no need to go back to owner table.
+	
 	@JoinColumn(name="id")
 	@ManyToOne
+	@JsonBackReference         
 	private Author author;
 
 
