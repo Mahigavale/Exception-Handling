@@ -33,9 +33,13 @@ public class Thread2 extends Thread {
 				e.printStackTrace();
 			}
 		}
-		}
 		
 		resource.notify();
+		//you have to always use the notify method inside the synchronized block.
+		//otherwise:=> not an owner error, exception.
+		}
+		
+		
 		
 	}
 }
