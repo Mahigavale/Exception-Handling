@@ -15,7 +15,7 @@ public class Consumer {
 		Thread t1=new Thread(m2);
 		
 		m1.start();//runnbale/running
-		m1.join();  //allows a thread to complete it's execution.
+		//m1.join();  //allows a thread to complete it's execution.
 		t1.start();//waited
 		
 	

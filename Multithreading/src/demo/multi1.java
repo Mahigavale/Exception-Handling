@@ -3,6 +3,7 @@ package demo;
 public class multi1 extends Thread {
 	
 	//Thread class :=> multithreadable class
+	//when you extend the thread class on a specific class it becomes multithreadable.
 	
 	
 	@Override
