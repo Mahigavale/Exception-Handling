@@ -16,15 +16,27 @@ public class Copying {
 		//with the help of the cloneable interface we can copy the object with the help of
 		//clone method.
 		
-		Student st=new Student(12,"mahesh");
+		
+		
+		//so basically we are able to copy the primitive data types but with the custom and
+		//non primitive we are getting the problem of the deep vs shallow copy.
+		Address add=new Address(17);
+		Student st=new Student(12,"mahesh",add);
 		
 		Student st2=(Student)st.clone();
 		
 		st2.id=15;
 		
+		st2.address.addid=56;
 		
+		
+		System.err.println("****************");
 		System.out.println(st.id);
         System.err.println(st2.id);		
+        System.out.println("**********");
+        
+        System.out.println(st.address.addid);
+        System.out.println(st.address.addid);
 		
 	}
 }
@@ -36,6 +48,7 @@ class Student implements Cloneable
 	
 	int id;
 	String name;
+	Address address;
 	
 	
 	
@@ -46,9 +59,22 @@ class Student implements Cloneable
 	}
 	
 	
-	public Student(int id,String name)
+	public Student(int id,String name,Address address)
 	{
 		this.id=id;
 		this.name=name;
+		this.address=address;
+	}
+}
+
+
+class Address{
+	int addid;
+	
+	
+	
+	public Address(int addid)
+	{
+		this.addid=addid;
 	}
 }
