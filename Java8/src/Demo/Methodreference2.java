@@ -19,7 +19,7 @@ public class Methodreference2 {
 		names.add("mansi");
 		names.add("pratik");
 		
-		demo d =new demo();
+		demo1 d =new demo1();
 		
 		names.forEach(d::print);
 		
@@ -37,7 +37,7 @@ public class Methodreference2 {
 	}
 
 }
-class demo
+class demo1
 {
 	public void print(String s)
 	{
